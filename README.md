@@ -24,37 +24,37 @@ This repository contains educational C++ programs that demonstrate fundamental c
 
 ## Building and Running the Programs
 
-### Using the Batch File
-The repository includes a batch file (`build_and_run.bat`) that automates the build and execution process:
+### Using GitHub Codespaces
+This repository is optimized for GitHub Codespaces. To use it:
 
-1. Open a command prompt
-2. Navigate to the repository directory
-3. Run the batch file:
-   ```
-   build_and_run.bat
+1. Open this repository in GitHub Codespaces
+2. Open a terminal in the Codespaces environment
+3. Run the shell script:
+   ```bash
+   ./build_and_run.sh
    ```
 
 ### Manual Build Instructions
 If you prefer to build manually:
 
 1. Create a build directory:
-   ```
+   ```bash
    mkdir build
    cd build
    ```
 
 2. Configure with CMake:
-   ```
+   ```bash
    cmake ..
    ```
 
 3. Build the programs:
-   ```
+   ```bash
    cmake --build .
    ```
 
 4. Run the programs:
-   ```
+   ```bash
    ./variables
    ./branches
    ./loops
@@ -64,7 +64,7 @@ If you prefer to build manually:
 
 - CMake 3.10 or higher
 - C++17 compatible compiler
-- Windows (for batch file) or any OS (for manual build)
+- GitHub Codespaces (recommended) or any Linux/Unix-like system
 
 ## License
 
