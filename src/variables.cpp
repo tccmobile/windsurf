@@ -7,11 +7,13 @@
  * - Floating point types (float, double)
  * - Character types (char)
  * - Boolean type (bool)
- * - String type (std::string)
+ * - String type (string)
  */
 
 #include <iostream>
 #include <string>
+
+using namespace std;
 
 int main() {
     // Integer types
@@ -30,26 +32,26 @@ int main() {
     bool isStudent = true;
 
     // String type
-    std::string name = "John Doe";
+    string name = "John Doe";
 
     // Output all variables
-    std::cout << "Integer Examples:\n";
-    std::cout << "Age: " << age << "\n";
-    std::cout << "World Population: " << population << "\n";
-    std::cout << "Small Number: " << smallNumber << "\n\n";
+    cout << "Integer Examples:\n";
+    cout << "Age: " << age << "\n";
+    cout << "World Population: " << population << "\n";
+    cout << "Small Number: " << smallNumber << "\n\n";
 
-    std::cout << "Floating Point Examples:\n";
-    std::cout << "Pi (float): " << pi << "\n";
-    std::cout << "Pi (double): " << precisePi << "\n\n";
+    cout << "Floating Point Examples:\n";
+    cout << "Pi (float): " << pi << "\n";
+    cout << "Pi (double): " << precisePi << "\n\n";
 
-    std::cout << "Character Example:\n";
-    std::cout << "Grade: " << grade << "\n\n";
+    cout << "Character Example:\n";
+    cout << "Grade: " << grade << "\n\n";
 
-    std::cout << "Boolean Example:\n";
-    std::cout << "Is Student: " << (isStudent ? "Yes" : "No") << "\n\n";
+    cout << "Boolean Example:\n";
+    cout << "Is Student: " << (isStudent ? "Yes" : "No") << "\n\n";
 
-    std::cout << "String Example:\n";
-    std::cout << "Name: " << name << "\n";
+    cout << "String Example:\n";
+    cout << "Name: " << name << "\n";
 
     return 0;
 }

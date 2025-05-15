@@ -10,48 +10,50 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 int main() {
     // Example 1: Basic for loop
-    std::cout << "\nFor Loop Example:\n";
-    std::cout << "Counting from 1 to 5:\n";
+    cout << "\nFor Loop Example:\n";
+    cout << "Counting from 1 to 5:\n";
     for (int i = 1; i <= 5; i++) {
-        std::cout << i << " ";
+        cout << i << " ";
     }
-    std::cout << "\n\n";
+    cout << "\n\n";
 
     // Example 2: While loop
-    std::cout << "While Loop Example:\n";
-    std::cout << "Counting down from 3:\n";
+    cout << "While Loop Example:\n";
+    cout << "Counting down from 3:\n";
     int count = 3;
     while (count > 0) {
-        std::cout << count << " ";
+        cout << count << " ";
         count--;
     }
-    std::cout << "\n\n";
+    cout << "\n\n";
 
     // Example 3: Do-while loop
-    std::cout << "Do-While Loop Example:\n";
-    std::cout << "Always runs at least once:\n";
+    cout << "Do-While Loop Example:\n";
+    cout << "Always runs at least once:\n";
     int num = 0;
     do {
-        std::cout << num << " ";
+        cout << num << " ";
         num++;
     } while (num < 3);
-    std::cout << "\n\n";
+    cout << "\n\n";
 
     // Example 4: Nested loops
-    std::cout << "Nested Loops Example:\n";
-    std::cout << "Multiplication Table:\n";
+    cout << "Nested Loops Example:\n";
+    cout << "Multiplication Table:\n";
     for (int i = 1; i <= 3; i++) {
         for (int j = 1; j <= 3; j++) {
-            std::cout << i << " x " << j << " = " << (i * j) << "\n";
+            cout << i << " x " << j << " = " << (i * j) << "\n";
         }
-        std::cout << "\n";
+        cout << "\n";
     }
 
     // Example 5: Loop control statements
-    std::cout << "\nLoop Control Example:\n";
-    std::cout << "Skipping even numbers:\n";
+    cout << "\nLoop Control Example:\n";
+    cout << "Skipping even numbers:\n";
     for (int i = 1; i <= 5; i++) {
         if (i % 2 == 0) {
             continue;  // Skip even numbers
@@ -59,18 +61,18 @@ int main() {
         if (i == 5) {
             break;     // Stop at 5
         }
-        std::cout << i << " ";
+        cout << i << " ";
     }
-    std::cout << "\n\n";
+    cout << "\n\n";
 
     // Example 6: Range-based for loop
-    std::cout << "Range-based For Loop Example:\n";
-    std::vector<int> numbers = {1, 2, 3, 4, 5};
-    std::cout << "Numbers in vector:\n";
+    cout << "Range-based For Loop Example:\n";
+    vector<int> numbers = {1, 2, 3, 4, 5};
+    cout << "Numbers in vector:\n";
     for (int num : numbers) {
-        std::cout << num << " ";
+        cout << num << " ";
     }
-    std::cout << "\n";
+    cout << "\n";
 
     return 0;
 }
